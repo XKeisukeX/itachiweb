@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    padding: 1.5rem;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+span{
+    color: #f42c38;
+}
+.banner{
+    background-size: cover;
+    background-image: url('itachi-tsukuyomi-blood-moon-thumb.jpg');
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 2s ease;
+}
+.banner .glass-wrapper{
+    height: 100%;
+    width: 30%;
+    background:
+rgba( 255, 255, 255, 0.25 );
+box-shadow:
+0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter:
+blur( 4px );
+-webkit-backdrop-filter:
+blur( 4px );
+border-radius:
+10px;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hero-title{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 6rem;
+}
+.hero-title h1, h2{
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.hero-title .naruto{
+    font-size: 80px;
+    color: #f42c38;
+    letter-spacing: 4px;
+}
+.hero-title .details{
+    width: 60%;
+    padding-top: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-bottom: 4.8rem;
+    line-height: 23px;
+}
+.hero-title .watch button{
+    background:
+rgba( 255, 255, 255, 0.25 );
+box-shadow:
+0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter:
+blur( 4px );
+-webkit-backdrop-filter:
+blur( 4px );
+border-radius:
+10px;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+color: #fff;padding: 12px 50px;
+border-radius: 50px;
+letter-spacing: 1.5px;
+font-weight: 500;
+cursor: pointer;
+transition: .3s ease;
+}
+.hero-title .watch button:hover{
+    color: white;
+    background-color: #f42c38;
+}
+.anime-list{
+    bottom: 25px;
+    position: absolute;
+    left: 33rem;
+}
+.anime-list p{
+    color: #fff;
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
+}
+.anime-list ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 55vw;
+    height: 11rem;
+    align-items: center;
+}
+.anime-list .thumbnail{
+    display: flex;
+    height: 10rem;
+    width: 15rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column; 
+    cursor: pointer;
+}
+.anime-list .thumbnail .itachi{
+    margin-top: auto;
+    padding: 10px 0px;
+    background: rgba(38, 38, 38, 0.05);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+.itachi .anime-name{
+    font-size: 24px;
+    font-weight: 600;
+}
+.itachi .anime1{
+    font-weight: 300;
+}
+.anime-list .active{
+    margin-top: -5rem;
+}

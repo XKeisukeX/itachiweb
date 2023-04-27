@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div data-aos="fade-down" data-aos-duration="800" class="logo"><span>JM</span>D.</div>
+            <ul data-aos="fade-down" data-aos-duration="800">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div data-aos="fade-left" data-aos-delay="900" data-aos-duration="700" class="glass-wrapper"></div>
+        </div>
+        <div class="hero-title">
+            <h2 data-aos="fade-left" data-aos-delay="500" data-aos-duration="700">Anime</h2>
+            <h1 data-aos="fade-left" data-aos-delay="600" data-aos-duration="700" class="naruto">Itachi</h1>
+            <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="700" class="details">
+                <p>Uchiha Itachi was an incredibly powerful shinobi with exceptional intelligence and talent. His mastery of various ninjutsu, genjutsu, and taijutsu techniques, as well as his strategic thinking and quick reflexes, <br> made him a formidable opponent on the battlefield.</p>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="800" data-aos-duration="700" class="watch">
+                <button>Watch</button>
+            </div>
+            <div class="anime-list">
+                <ul class="naruto-list">
+                    <li data-aos="zoom-in" data-aos-duration="700" data-aos-duration="700"class="active"
+                    data-img = "itachi-tsukuyomi-blood-moon-thumb.jpg">
+                        <div class="thumbnail" style="background-image: url('itachi-tsukuyomi-blood-moon-thumb.jpg');">
+                            <div class="itachi">
+                                <p class="anime1">Anime</p>
+                                <p class="anime-name">Uchiha Itachi</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li
+                    data-aos="zoom-in" data-aos-duration="750" data-aos-duration="700" data-img = "sasuchi.jpg">
+                        <div class="thumbnail" style="background-image: url('sasuchi.jpg');">
+                            <div class="itachi">
+                                <p class="anime1">Anime</p>
+                                <p class="anime-name">Uchiha Itachi</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li
+                    data-aos="zoom-in" data-aos-duration="850" data-aos-duration="700" data-img = "anime.jpg">
+                        <div class="thumbnail" style="background-image: url('anime.jpg');">
+                            <div class="itachi">
+                                <p class="anime1">Anime</p>
+                                <p class="anime-name">Uchiha Itachi</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    let places = document.querySelectorAll('.anime-list li')
+    let active = "itachi-tsukuyomi-blood-moon-thumb.jpg";
+
+    places.forEach((e) => {
+        e.addEventListener("mouseenter", (event) => {
+            places.forEach((e) => {
+                e.classList.remove("active");
+            });
+
+            event.target.classList.add("active");
+            active = event.target.getAttribute('data-img')
+            let banner = document.querySelector('.banner')
+            banner.style.backgroundImage = `url('${active}')`;
+        });
+    });
+</script>
+</html>
